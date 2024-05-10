@@ -1,8 +1,13 @@
+body {
+  background-color: #a69cac;
+}
 .App {
   width: 600px;
   margin: 100px auto;
   box-shadow: 0 0 5px lightblue;
   padding: 20px;
+  background-color: #f1dac4;
+  border-radius: 15px;
 }
 
 h1 {
@@ -15,8 +20,9 @@ main {
   /* max-height: 500px; */
   margin-top: 10px;
 }
-
+.capital {
+  text-transform: capitalize;
+}
 .cross {
   text-decoration: line-through;
-  text-transform: uppercase;
 }
