@@ -16,7 +16,7 @@ export default function SingleTodo({
   const handleUpdateTask = (e) => {
     setUpdateTask(e.target.value);
   };
-  const isDisabled = () => true;
+  // const isDisabled = () => true;
   return (
     <div>
       <InputGroup style={{ marginBottom: "2px" }}>

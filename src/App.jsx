@@ -100,17 +100,22 @@ function App() {
       </InputGroup>
       <main>
         <List style={{ padding: "0" }}>
-          {todoList.map((todo) => {
-            const oneProps = {
-              ...todo,
-              editId,
-              handleDelete,
-              handleEdit,
-              handleSave,
-              handleCompleted,
-            };
-            return <SingleTodo {...oneProps} key={todo.id} />;
-          })}
+          {todoList.length > 0 ? (
+            todoList.map((todo) => {
+              console.log(todo);
+              const oneProps = {
+                ...todo,
+                editId,
+                handleDelete,
+                handleEdit,
+                handleSave,
+                handleCompleted,
+              };
+              return <SingleTodo {...oneProps} key={todo.id} />;
+            })
+          ) : (
+            <p>No Todos yet!</p>
+          )}
         </List>
       </main>
       <footer>
